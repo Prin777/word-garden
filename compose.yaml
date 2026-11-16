@@ -1,0 +1,20 @@
+services:
+  word-garden:
+    image: word-garden:0.1.0
+    build: .
+    container_name: word-garden
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "3000"
+      DATA_DIR: /data
+      TZ: Asia/Shanghai
+    volumes:
+      - ./data:/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

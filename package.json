@@ -1,0 +1,1 @@
+{"name":"word-garden","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.mjs","import":"node scripts/import-anki.mjs","test":"node --test"},"dependencies":{"ts-fsrs":"5.2.3"},"engines":{"node":">=22.13"}}

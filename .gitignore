@@ -1,0 +1,20 @@
+# Installed dependencies, local runtimes, models, and build output
+/node_modules/
+/.runtime/
+/release/
+
+# Local vocabulary, audio, SQLite database, and learning history
+/data/
+
+# Third-party source material and derived audit data
+/research/*.apkg
+/research/collection.anki2*
+/research/media
+/research/ielts-audit.json
+/research/ielts-builder-reference.txt
+
+# Local settings and logs
+.env
+.env.*
+!.env.example
+*.log
